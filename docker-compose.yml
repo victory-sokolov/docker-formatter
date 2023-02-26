@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+
+  black:
+    build: ./black
+    image: formatter/black
+
+  prettier:
+    build: ./prettier
+    image: formatter/prettier
+
+  gofmt:
+    build: ./gofmt
+    image: formatter/gofmt
+
+  phpcsfixer:
+    build: ./php-cs-fixer
+    image: formatter/phpcsfixer
